@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: Extract shared utilities and layout components (animations.ts, Navbar, Footer, RootLayout)
+- [x] 01-01: Extract shared utilities and layout components (animations.ts, Navbar, Footer, RootLayout)
 - [ ] 01-02: Install react-router-dom, wire up routing, compose 5 page components, configure SPA fallback
 
 ### Phase 2: Contact Form
@@ -82,7 +82,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Routing Foundation | 0/2 | Not started | - |
+| 1. Routing Foundation | 1/2 | In Progress|  |
 | 2. Contact Form | 0/1 | Not started | - |
 | 3. SEO Metadata | 0/1 | Not started | - |
 | 4. Animation Polish | 0/1 | Not started | - |

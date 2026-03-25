@@ -12,8 +12,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **ROUT-01**: Site has 5 distinct pages at `/`, `/about`, `/services`, `/values`, `/contact`
 - [ ] **ROUT-02**: Shared layout with persistent Navbar and Footer across all pages
 - [ ] **ROUT-03**: Navbar links navigate between pages (route-based, not anchor-based)
-- [ ] **ROUT-04**: Components extracted from monolithic App.tsx into proper file structure
-- [ ] **ROUT-05**: Shared animation variants in dedicated utility file
+- [x] **ROUT-04**: Components extracted from monolithic App.tsx into proper file structure
+- [x] **ROUT-05**: Shared animation variants in dedicated utility file
 - [ ] **ROUT-06**: SPA fallback configured for production (no 404 on refresh)
 - [ ] **ROUT-07**: Scroll position resets to top on page navigation
 
@@ -81,8 +81,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | ROUT-01 | Phase 1 | Pending |
 | ROUT-02 | Phase 1 | Pending |
 | ROUT-03 | Phase 1 | Pending |
-| ROUT-04 | Phase 1 | Pending |
-| ROUT-05 | Phase 1 | Pending |
+| ROUT-04 | Phase 1 | Complete |
+| ROUT-05 | Phase 1 | Complete |
 | ROUT-06 | Phase 1 | Pending |
 | ROUT-07 | Phase 1 | Pending |
 | PAGE-01 | Phase 1 | Pending |
