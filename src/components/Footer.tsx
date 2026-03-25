@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-[#060E1A] text-white pt-24 pb-12">
@@ -5,11 +7,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-24">
           <div className="lg:col-span-5">
             <div className="flex items-center mb-8">
-              <img
-                src="/image/logo2.jpeg"
-                alt="Stewardship Advisory"
-                className="h-16 w-auto object-contain"
-              />
+              <Link to="/">
+                <img
+                  src="/image/logo2.jpeg"
+                  alt="Stewardship Advisory"
+                  className="h-16 w-auto object-contain"
+                />
+              </Link>
             </div>
             <p className="text-lg text-white/50 font-light max-w-sm mb-8 leading-relaxed">
               Independent strategic counsel for institutional credibility,
@@ -24,24 +28,24 @@ const Footer = () => {
               </h4>
               <ul className="space-y-4 text-sm font-medium text-white/60">
                 <li>
-                  <a href="#about" className="hover:text-white transition-colors">
+                  <Link to="/about" className="hover:text-white transition-colors">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-white transition-colors">
+                  <Link to="/services" className="hover:text-white transition-colors">
                     What We Do
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#framework" className="hover:text-white transition-colors">
+                  <Link to="/services" className="hover:text-white transition-colors">
                     I-TRUST Framework
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#values" className="hover:text-white transition-colors">
+                  <Link to="/values" className="hover:text-white transition-colors">
                     Our Values
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

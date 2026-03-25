@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 import { fadeUp, staggerContainer } from "../lib/animations";
 
 const Hero = () => {
@@ -42,17 +43,13 @@ const Hero = () => {
               understood, credible, and stable.
             </motion.p>
             <motion.div variants={fadeUp}>
-              <button
-                onClick={() =>
-                  document
-                    .querySelector("#about")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
+              <Link
+                to="/about"
                 className="inline-flex items-center px-8 py-4 rounded-full border border-white/20 text-sm font-medium hover:bg-white hover:text-[#0A1628] transition-colors"
               >
                 Learn More
                 <ChevronDown className="ml-2 w-4 h-4" />
-              </button>
+              </Link>
             </motion.div>
           </motion.div>
         </div>

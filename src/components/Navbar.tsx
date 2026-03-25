@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import { motion } from "motion/react";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -22,18 +24,16 @@ const Navbar = () => {
     };
   }, [mobileMenuOpen]);
 
-  const navLinks = [
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Framework", href: "#framework" },
-    { label: "Values", href: "#values" },
-  ];
-
-  const handleNavClick = (href: string) => {
+  useEffect(() => {
     setMobileMenuOpen(false);
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
+  }, [location.pathname]);
+
+  const navLinks = [
+    { label: "About", to: "/about" },
+    { label: "Services", to: "/services" },
+    { label: "Values", to: "/values" },
+    { label: "Contact", to: "/contact" },
+  ];
 
   return (
     <>
@@ -42,31 +42,35 @@ const Navbar = () => {
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
           <div className="flex items-center gap-3 relative z-50">
-            <img
-              src="/image/logo2.jpeg"
-              alt="Stewardship Advisory"
-              className="h-14 w-auto object-contain"
-            />
+            <NavLink to="/">
+              <img
+                src="/image/logo2.jpeg"
+                alt="Stewardship Advisory"
+                className="h-14 w-auto object-contain"
+              />
+            </NavLink>
           </div>
 
           <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-white/70">
             {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => handleNavClick(link.href)}
-                className="hover:text-white transition-colors"
+              <NavLink
+                key={link.to}
+                to={link.to}
+                className={({ isActive }) =>
+                  `hover:text-white transition-colors ${isActive ? "text-white" : ""}`
+                }
               >
                 {link.label}
-              </button>
+              </NavLink>
             ))}
           </div>
 
-          <button
-            onClick={() => handleNavClick("#contact")}
+          <NavLink
+            to="/contact"
             className="hidden md:block px-6 py-2.5 rounded-full border border-white/20 text-white text-sm font-medium hover:bg-white hover:text-[#0A1628] transition-colors"
           >
             Get in Touch
-          </button>
+          </NavLink>
 
           <button
             className="md:hidden text-white relative z-50 p-2 -mr-2"
@@ -100,21 +104,23 @@ const Navbar = () => {
       >
         <div className="flex flex-col space-y-8 text-2xl font-serif text-white">
           {navLinks.map((link) => (
-            <button
-              key={link.href}
-              onClick={() => handleNavClick(link.href)}
-              className="text-left hover:text-white/70 transition-colors"
+            <NavLink
+              key={link.to}
+              to={link.to}
+              className={({ isActive }) =>
+                `text-left hover:text-white/70 transition-colors ${isActive ? "text-white" : "text-white/80"}`
+              }
             >
               {link.label}
-            </button>
+            </NavLink>
           ))}
           <div className="pt-8 border-t border-white/10">
-            <button
-              onClick={() => handleNavClick("#contact")}
-              className="w-full py-4 rounded-full border border-white/20 text-white text-lg font-medium hover:bg-white hover:text-[#0A1628] transition-colors"
+            <NavLink
+              to="/contact"
+              className="block w-full py-4 rounded-full border border-white/20 text-white text-lg font-medium hover:bg-white hover:text-[#0A1628] transition-colors text-center"
             >
               Get in Touch
-            </button>
+            </NavLink>
           </div>
         </div>
       </motion.div>

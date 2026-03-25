@@ -1,27 +1,21 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import VisionMission from "./components/VisionMission";
-import Services from "./components/Services";
-import Framework from "./components/Framework";
-import Values from "./components/Values";
-import CTA from "./components/CTA";
-import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import RootLayout from "./layouts/RootLayout";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/ServicesPage";
+import ValuesPage from "./pages/ValuesPage";
+import ContactPage from "./pages/ContactPage";
 
 export default function App() {
   return (
-    <div className="min-h-screen font-sans selection:bg-[#0A1628] selection:text-white">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <VisionMission />
-        <Services />
-        <Framework />
-        <Values />
-        <CTA />
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      <Route element={<RootLayout />}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/values" element={<ValuesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Route>
+    </Routes>
   );
 }
