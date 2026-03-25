@@ -78,34 +78,34 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| ROUT-01 | — | Pending |
-| ROUT-02 | — | Pending |
-| ROUT-03 | — | Pending |
-| ROUT-04 | — | Pending |
-| ROUT-05 | — | Pending |
-| ROUT-06 | — | Pending |
-| ROUT-07 | — | Pending |
-| PAGE-01 | — | Pending |
-| PAGE-02 | — | Pending |
-| PAGE-03 | — | Pending |
-| PAGE-04 | — | Pending |
-| PAGE-05 | — | Pending |
-| CONT-01 | — | Pending |
-| CONT-02 | — | Pending |
-| CONT-03 | — | Pending |
-| CONT-04 | — | Pending |
-| SEO-01 | — | Pending |
-| SEO-02 | — | Pending |
-| SEO-03 | — | Pending |
-| ANIM-01 | — | Pending |
-| ANIM-02 | — | Pending |
-| ANIM-03 | — | Pending |
+| ROUT-01 | Phase 1 | Pending |
+| ROUT-02 | Phase 1 | Pending |
+| ROUT-03 | Phase 1 | Pending |
+| ROUT-04 | Phase 1 | Pending |
+| ROUT-05 | Phase 1 | Pending |
+| ROUT-06 | Phase 1 | Pending |
+| ROUT-07 | Phase 1 | Pending |
+| PAGE-01 | Phase 1 | Pending |
+| PAGE-02 | Phase 1 | Pending |
+| PAGE-03 | Phase 1 | Pending |
+| PAGE-04 | Phase 1 | Pending |
+| PAGE-05 | Phase 1 | Pending |
+| CONT-01 | Phase 2 | Pending |
+| CONT-02 | Phase 2 | Pending |
+| CONT-03 | Phase 2 | Pending |
+| CONT-04 | Phase 2 | Pending |
+| SEO-01 | Phase 3 | Pending |
+| SEO-02 | Phase 3 | Pending |
+| SEO-03 | Phase 3 | Pending |
+| ANIM-01 | Phase 4 | Pending |
+| ANIM-02 | Phase 4 | Pending |
+| ANIM-03 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 22 total
-- Mapped to phases: 0
-- Unmapped: 22 ⚠️
+- Mapped to phases: 22
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-25*
-*Last updated: 2026-03-25 after initial definition*
+*Last updated: 2026-03-25 after roadmap creation*
