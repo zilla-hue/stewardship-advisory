@@ -29,7 +29,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Hard-refreshing any page URL in the browser shows that page, not a 404
   4. Navigating to a new page scrolls to the top rather than inheriting the previous scroll position
   5. All existing content from the single-page app is visible — nothing has been lost during extraction
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [ ] 01-01: Extract shared utilities and layout components (animations.ts, Navbar, Footer, RootLayout)
