@@ -12,7 +12,7 @@ An existing React SPA is transformed into a proper multi-page marketing website 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Routing Foundation** - Multi-page structure with correct navigation, 5 dedicated URLs, and all content pages composed from extracted components
+- [x] **Phase 1: Routing Foundation** - Multi-page structure with correct navigation, 5 dedicated URLs, and all content pages composed from extracted components
 - [ ] **Phase 2: Contact Form** - Working inquiry form with email delivery verified end-to-end via Formspree
 - [ ] **Phase 3: SEO Metadata** - Per-page titles, descriptions, and Open Graph tags with branded OG image
 - [ ] **Phase 4: Animation Polish** - Page transition animations and scroll-triggered entrance corrections across all pages
@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01: Extract shared utilities and layout components (animations.ts, Navbar, Footer, RootLayout)
-- [ ] 01-02: Install react-router-dom, wire up routing, compose 5 page components, configure SPA fallback
+- [x] 01-02: Install react-router-dom, wire up routing, compose 5 page components, configure SPA fallback
 
 ### Phase 2: Contact Form
 **Goal**: A visitor can submit a structured inquiry through the Contact page and the firm receives the email
@@ -82,7 +82,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Routing Foundation | 1/2 | In Progress|  |
+| 1. Routing Foundation | 2/2 | Complete | 2026-03-26 |
 | 2. Contact Form | 0/1 | Not started | - |
 | 3. SEO Metadata | 0/1 | Not started | - |
 | 4. Animation Polish | 0/1 | Not started | - |
