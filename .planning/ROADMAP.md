@@ -44,10 +44,10 @@ Plans:
   2. Submitting with missing required fields or an invalid email shows inline validation errors before sending
   3. A successful submission delivers an email to the firm's inbox (verified end-to-end in a real browser)
   4. The form shows a loading indicator while submitting, a success confirmation after delivery, and a clear error message if the service fails
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 02-01: Build ContactForm component with state machine (idle/submitting/success/error) and Formspree integration
+- [ ] 02-01-PLAN.md — Install @formspree/react, build ContactPage form with validation, Formspree submission, and loading/success/error states
 
 ### Phase 3: SEO Metadata
 **Goal**: Each page presents unique, professional metadata to search engines and social platforms
