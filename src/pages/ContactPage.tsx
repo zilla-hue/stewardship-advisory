@@ -4,6 +4,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import { motion } from "motion/react";
 import { Loader2 } from "lucide-react";
 import { fadeUp, staggerContainer } from "../lib/animations";
+import PageSEO from "../lib/seo";
 
 const INQUIRY_TOPICS = [
   "Institutional Communications Strategy",
@@ -15,7 +16,7 @@ const INQUIRY_TOPICS = [
 ];
 
 const ContactPage = () => {
-  const [state, handleSubmit] = useForm("xpwrggkj");
+  const [state, handleSubmit] = useForm("xkopnqrj");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [organization, setOrganization] = useState("");
@@ -39,28 +40,41 @@ const ContactPage = () => {
     handleSubmit(e);
   };
 
+  const seo = (
+    <PageSEO
+      title="Contact"
+      description="Get in touch with Stewardship Advisory. We welcome inquiries from institutions and leaders seeking independent strategic counsel."
+      path="/contact"
+    />
+  );
+
   if (state.succeeded) {
     return (
-      <section className="bg-white text-[#0A1628] py-24 md:py-32 min-h-screen">
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={staggerContainer}
-          className="max-w-7xl mx-auto px-6 md:px-12"
-        >
-          <motion.h2 variants={fadeUp} className="text-4xl font-serif mb-6">
-            Message received
-          </motion.h2>
-          <motion.p variants={fadeUp} className="text-[#0A1628]/70 font-light">
-            Thank you for reaching out. We will be in touch shortly.
-          </motion.p>
-        </motion.div>
-      </section>
+      <>
+        {seo}
+        <section className="bg-white text-[#0A1628] py-24 md:py-32 min-h-screen">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={staggerContainer}
+            className="max-w-7xl mx-auto px-6 md:px-12"
+          >
+            <motion.h2 variants={fadeUp} className="text-4xl font-serif mb-6">
+              Message received
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-[#0A1628]/70 font-light">
+              Thank you for reaching out. We will be in touch shortly.
+            </motion.p>
+          </motion.div>
+        </section>
+      </>
     );
   }
 
   return (
-    <section className="bg-white text-[#0A1628] py-24 md:py-32 min-h-screen">
+    <>
+      {seo}
+      <section className="bg-white text-[#0A1628] py-24 md:py-32 min-h-screen">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -214,6 +228,7 @@ const ContactPage = () => {
         </motion.form>
       </motion.div>
     </section>
+    </>
   );
 };
 
