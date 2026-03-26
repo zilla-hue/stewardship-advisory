@@ -57,10 +57,10 @@ Plans:
   1. Each of the 5 pages has a distinct browser tab title that identifies both the page and the firm
   2. Sharing any page URL on LinkedIn or WhatsApp shows a branded preview card with the firm's name, a relevant description, and the OG image
   3. The OG image is a professionally composed 1200x630px graphic using existing brand assets and colors
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 03-01: Install react-helmet-async, write per-page Helmet components, create branded OG image
+- [ ] 03-01-PLAN.md — Install react-helmet-async, create PageSEO component, generate branded OG image, add per-page metadata to all 5 pages
 
 ### Phase 4: Animation Polish
 **Goal**: Navigation between pages feels smooth and professional; content entrance animations work correctly on all pages regardless of page height
