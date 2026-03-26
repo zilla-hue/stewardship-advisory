@@ -34,9 +34,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### SEO & Metadata
 
-- [ ] **SEO-01**: Each page has unique title and meta description
-- [ ] **SEO-02**: Open Graph tags (og:title, og:description, og:image) per page
-- [ ] **SEO-03**: Branded OG image (1200x630px) for social previews
+- [x] **SEO-01**: Each page has unique title and meta description
+- [x] **SEO-02**: Open Graph tags (og:title, og:description, og:image) per page
+- [x] **SEO-03**: Branded OG image (1200x630px) for social previews
 
 ### Animation & Polish
 
@@ -94,9 +94,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-02 | Phase 2 | Pending |
 | CONT-03 | Phase 2 | Pending |
 | CONT-04 | Phase 2 | Pending |
-| SEO-01 | Phase 3 | Pending |
-| SEO-02 | Phase 3 | Pending |
-| SEO-03 | Phase 3 | Pending |
+| SEO-01 | Phase 3 | Complete |
+| SEO-02 | Phase 3 | Complete |
+| SEO-03 | Phase 3 | Complete |
 | ANIM-01 | Phase 4 | Pending |
 | ANIM-02 | Phase 4 | Pending |
 | ANIM-03 | Phase 4 | Pending |
