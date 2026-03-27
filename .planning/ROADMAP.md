@@ -70,10 +70,10 @@ Plans:
   1. Navigating between any two pages plays a visible transition animation (e.g., fade or slide) rather than an instant cut
   2. Content sections on short pages (like Contact) animate in on mount, not requiring a scroll trigger that never fires
   3. All 5 pages render correctly at 375px viewport width with no content overflow, clipped text, or broken layouts
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 04-01: Add AnimatePresence page transitions in RootLayout, audit and fix per-page animations, mobile responsive pass
+- [ ] 04-01-PLAN.md — Add AnimatePresence page transitions in RootLayout, fix mount animations on short pages, mobile responsive audit at 375px
 
 ## Progress
 
