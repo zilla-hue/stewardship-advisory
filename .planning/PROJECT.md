@@ -32,13 +32,14 @@ Visitors must immediately understand what Stewardship Advisory does and be able 
 - ✓ Dedicated Contact page with working inquiry form — Validated in Phase 2
 - ✓ Email service integration for form submissions — Validated in Phase 2 (Formspree)
 - ✓ SEO metadata (title, description, Open Graph tags per page) — Validated in Phase 3
+- ✓ Page transition animations between routes — Validated in Phase 4
+- ✓ Mobile-first responsive refinement across all pages — Validated in Phase 4
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-- [ ] Page transition animations between routes
-- [ ] Mobile-first responsive refinement across all pages
+- No active requirements — all v1 requirements validated
 
 ### Out of Scope
 
@@ -93,4 +94,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-26 after Phase 3 (SEO Metadata) completion*
+*Last updated: 2026-03-27 after Phase 4 (Animation Polish) completion — all v1 phases complete*
