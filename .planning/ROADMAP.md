@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Routing Foundation** - Multi-page structure with correct navigation, 5 dedicated URLs, and all content pages composed from extracted components
 - [x] **Phase 2: Contact Form** - Working inquiry form with email delivery verified end-to-end via Formspree
 - [x] **Phase 3: SEO Metadata** - Per-page titles, descriptions, and Open Graph tags with branded OG image (completed 2026-03-26)
-- [ ] **Phase 4: Animation Polish** - Page transition animations and scroll-triggered entrance corrections across all pages
+- [x] **Phase 4: Animation Polish** - Page transition animations and scroll-triggered entrance corrections across all pages (completed 2026-03-27)
 
 ## Phase Details
 
@@ -73,7 +73,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 04-01-PLAN.md — Add AnimatePresence page transitions in RootLayout, fix mount animations on short pages, mobile responsive audit at 375px
+- [x] 04-01-PLAN.md — Add AnimatePresence page transitions in RootLayout, fix mount animations on short pages, mobile responsive audit at 375px
 
 ## Progress
 
@@ -85,4 +85,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Routing Foundation | 2/2 | Complete | 2026-03-26 |
 | 2. Contact Form | 1/1 | Complete | 2026-03-26 |
 | 3. SEO Metadata | 1/1 | Complete   | 2026-03-26 |
-| 4. Animation Polish | 0/1 | Not started | - |
+| 4. Animation Polish | 1/1 | Complete   | 2026-03-27 |

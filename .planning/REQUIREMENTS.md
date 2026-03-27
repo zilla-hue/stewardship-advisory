@@ -40,9 +40,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Animation & Polish
 
-- [ ] **ANIM-01**: Page transition animations between routes via AnimatePresence
-- [ ] **ANIM-02**: Scroll-triggered animations adapted for multi-page (mount-triggered on short pages)
-- [ ] **ANIM-03**: Mobile-first responsive refinement across all 5 pages
+- [x] **ANIM-01**: Page transition animations between routes via AnimatePresence
+- [x] **ANIM-02**: Scroll-triggered animations adapted for multi-page (mount-triggered on short pages)
+- [x] **ANIM-03**: Mobile-first responsive refinement across all 5 pages
 
 ## v2 Requirements
 
@@ -97,9 +97,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-01 | Phase 3 | Complete |
 | SEO-02 | Phase 3 | Complete |
 | SEO-03 | Phase 3 | Complete |
-| ANIM-01 | Phase 4 | Pending |
-| ANIM-02 | Phase 4 | Pending |
-| ANIM-03 | Phase 4 | Pending |
+| ANIM-01 | Phase 4 | Complete |
+| ANIM-02 | Phase 4 | Complete |
+| ANIM-03 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 22 total
