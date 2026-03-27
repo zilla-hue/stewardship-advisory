@@ -1,6 +1,14 @@
 import { motion } from "motion/react";
 import { fadeUp, staggerContainer } from "../lib/animations";
 
+const beliefs = [
+  "Influence is a responsibility before it is an advantage",
+  "Reputation is an institutional asset that must be actively managed",
+  "Policy intelligence is a commercial and political differentiator",
+  "Strategic communication is a leadership function, not a support function",
+  "Sustainable impact requires structured stewardship of trust",
+];
+
 const VisionMission = () => {
   return (
     <section className="bg-[#0A1628] text-white py-24 md:py-32">
@@ -10,41 +18,36 @@ const VisionMission = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24"
         >
-          {/* Vision */}
-          <motion.div
-            variants={fadeUp}
-            className="border-l-2 border-amber-400/60 pl-8"
-          >
-            <span className="text-xs font-bold tracking-widest uppercase text-white/40 mb-4 block">
-              Vision
+          <motion.div variants={fadeUp} className="mb-4">
+            <span className="text-xs font-bold tracking-widest uppercase text-white/40">
+              Our Strategic Philosophy
             </span>
-            <h3 className="text-2xl md:text-3xl font-serif leading-relaxed">
-              To become the most trusted advisory firm in Africa for
-              institutional credibility, leadership communication, and public
-              trust.
-            </h3>
           </motion.div>
 
-          {/* Mission */}
-          <motion.div
+          <motion.h2
             variants={fadeUp}
-            className="border-l-2 border-amber-400/60 pl-8"
+            className="text-3xl md:text-5xl font-serif leading-tight mb-16 max-w-3xl"
           >
-            <span className="text-xs font-bold tracking-widest uppercase text-white/40 mb-4 block">
-              Mission
-            </span>
-            <h3 className="text-2xl md:text-3xl font-serif leading-relaxed">
-              To strengthen the relationship between institutions and the people
-              they serve by providing sound judgement, structured communication
-              guidance, and thoughtful stakeholder engagement.
-            </h3>
-            <p className="text-lg text-white/50 font-light mt-6 leading-relaxed">
-              Our work helps organisations be understood, trusted, and stable in
-              times of both calm and pressure.
-            </p>
-          </motion.div>
+            We believe
+          </motion.h2>
+
+          <div className="space-y-0">
+            {beliefs.map((belief, i) => (
+              <motion.div
+                key={i}
+                variants={fadeUp}
+                className="border-t border-white/10 py-6 md:py-8"
+              >
+                <p className="text-lg md:text-xl text-white/70 font-light leading-relaxed pl-8 md:pl-12 relative">
+                  <span className="absolute left-0 top-0 text-amber-400/60 font-serif text-2xl leading-none">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  {belief}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

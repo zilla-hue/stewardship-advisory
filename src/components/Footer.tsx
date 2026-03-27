@@ -16,8 +16,8 @@ const Footer = () => {
               </Link>
             </div>
             <p className="text-lg text-white/50 font-light max-w-sm mb-8 leading-relaxed">
-              Independent strategic counsel for institutional credibility,
-              leadership communication, and public trust.
+              Strategic institutional advisory for leaders and organisations
+              navigating complex governance, policy and reputational environments.
             </p>
           </div>
 
@@ -54,10 +54,11 @@ const Footer = () => {
                 Services
               </h4>
               <ul className="space-y-4 text-sm text-white/50 font-light">
-                <li>Leadership Communication</li>
-                <li>Institutional Narrative</li>
-                <li>Stakeholder Engagement</li>
-                <li>Crisis Advisory</li>
+                <li>Strategic Communications</li>
+                <li>Policy Engagement</li>
+                <li>Reputation Architecture</li>
+                <li>Development Finance</li>
+                <li>Executive Counsel</li>
               </ul>
             </div>
             <div>

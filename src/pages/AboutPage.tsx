@@ -1,17 +1,15 @@
 import PageSEO from "../lib/seo";
-import About from "../components/About";
-import VisionMission from "../components/VisionMission";
+import AboutDetail from "../components/AboutDetail";
 
 const AboutPage = () => {
   return (
     <>
       <PageSEO
         title="About"
-        description="Independent strategic counsel for institutional leaders. Stewardship Advisory combines governance awareness, stakeholder insight, and structured communication guidance."
+        description="Stewardship Advisory Co is a strategic institutional advisory firm supporting leaders and organisations navigating complex governance, policy and reputational environments."
         path="/about"
       />
-      <About />
-      <VisionMission />
+      <AboutDetail />
     </>
   );
 };

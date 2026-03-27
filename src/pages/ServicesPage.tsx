@@ -1,5 +1,5 @@
 import PageSEO from "../lib/seo";
-import Services from "../components/Services";
+import ServicesDetail from "../components/ServicesDetail";
 import Framework from "../components/Framework";
 
 const ServicesPage = () => {
@@ -7,10 +7,10 @@ const ServicesPage = () => {
     <>
       <PageSEO
         title="Services"
-        description="Institutional communications strategy, reputation advisory, stakeholder engagement, and crisis communications. Guided by the I-TRUST framework."
+        description="Strategic advisory for institutional positioning, government engagement, reputation architecture, development finance and executive counsel."
         path="/services"
       />
-      <Services />
+      <ServicesDetail />
       <Framework />
     </>
   );

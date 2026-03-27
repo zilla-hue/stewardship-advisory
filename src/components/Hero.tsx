@@ -30,22 +30,22 @@ const Hero = () => {
               variants={fadeUp}
               className="text-4xl md:text-6xl lg:text-7xl font-serif mb-8 leading-[1.1] tracking-tight"
             >
-              Institutional Counsel.
+              Stewarding Influence.
               <br />
-              <span className="text-white/60">Public Trust.</span>
+              <span className="text-white/60">Shaping Institutional Trust.</span>
             </motion.h1>
             <motion.p
               variants={fadeUp}
               className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto font-light leading-relaxed mb-12"
             >
-              We support leaders and organisations whose responsibilities place
-              them in the public eye, helping them communicate decisions that are
-              understood, credible, and stable.
+              We advise leaders, institutions and high-impact organisations
+              navigating complex policy environments, reputational risk landscapes
+              and transformational growth opportunities.
             </motion.p>
             <motion.div variants={fadeUp}>
               <Link
                 to="/about"
-                className="inline-flex items-center px-8 py-4 rounded-full border border-white/20 text-sm font-medium hover:bg-white hover:text-[#0A1628] transition-colors"
+                className="inline-flex items-center px-8 py-4 rounded-full border border-white/20 text-sm font-medium hover:bg-white hover:text-[#0A1628] transition-colors cursor-pointer"
               >
                 Learn More
                 <ChevronDown className="ml-2 w-4 h-4" />

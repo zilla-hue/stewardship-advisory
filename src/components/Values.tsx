@@ -1,44 +1,38 @@
-import { Shield, Eye, Anchor, Lightbulb, Heart, Users } from "lucide-react";
+import { Building2, Landmark, Briefcase, Globe, UserCircle } from "lucide-react";
 import { motion } from "motion/react";
 import { fadeUp, staggerContainer } from "../lib/animations";
 
 const Values = () => {
-  const values = [
+  const audiences = [
     {
-      icon: Shield,
-      title: "Responsibility",
+      icon: Landmark,
+      title: "Government & Public Institutions",
       description:
-        "We recognise that institutions carry consequences beyond themselves. Our guidance prioritises public impact, not only organisational comfort.",
+        "Government leaders and public institutions navigating policy, governance and stakeholder expectations.",
     },
     {
-      icon: Eye,
-      title: "Integrity",
+      icon: Building2,
+      title: "Financial Institutions",
       description:
-        "We provide honest counsel, even when it is difficult. We do not shape facts to suit narratives.",
+        "Financial institutions and development finance actors seeking credibility and strategic positioning.",
     },
     {
-      icon: Anchor,
-      title: "Independence",
+      icon: Briefcase,
+      title: "Corporate Organisations",
       description:
-        "Our judgement is not influenced by politics, popularity, or pressure. Clients receive advice, not approval.",
+        "Corporate organisations navigating regulatory or reputational complexity in high-stakes environments.",
     },
     {
-      icon: Lightbulb,
-      title: "Clarity",
+      icon: Globe,
+      title: "Foundations & Multilateral Programmes",
       description:
-        "We translate complex decisions into understandable communication so stakeholders can follow reasoning rather than speculation.",
+        "Foundations, multilateral programmes and impact-driven initiatives building sustainable partnerships.",
     },
     {
-      icon: Heart,
-      title: "Discretion",
+      icon: UserCircle,
+      title: "Executives & Policy Influencers",
       description:
-        "We treat client matters with confidentiality and restraint. Trust is built not only by what we say, but by what we protect.",
-    },
-    {
-      icon: Users,
-      title: "Stewardship",
-      description:
-        "We encourage leadership that uses authority carefully, transparently, and with awareness of long-term consequences.",
+        "High-profile executives and policy influencers requiring confidential strategic counsel.",
     },
   ];
 
@@ -53,15 +47,15 @@ const Values = () => {
         >
           <motion.div variants={fadeUp} className="mb-4">
             <span className="text-xs font-bold tracking-widest uppercase text-[#0A1628]/40">
-              Our Core Values
+              Who We Work With
             </span>
           </motion.div>
           <motion.h2
             variants={fadeUp}
-            className="text-3xl md:text-5xl font-serif max-w-2xl mx-auto leading-tight"
+            className="text-3xl md:text-5xl font-serif max-w-3xl mx-auto leading-tight"
           >
-            We measure success not by publicity, but by improved relationships
-            between institutions and the people they serve.
+            We partner with leaders and institutions prepared to build enduring
+            value.
           </motion.h2>
         </motion.div>
 
@@ -71,16 +65,16 @@ const Values = () => {
           variants={staggerContainer}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16"
         >
-          {values.map((value, i) => (
+          {audiences.map((audience, i) => (
             <motion.div
               variants={fadeUp}
               key={i}
               className="border-t border-[#0A1628]/10 pt-8"
             >
-              <value.icon className="w-6 h-6 text-[#0A1628]/30 mb-6" />
-              <h3 className="text-xl font-medium mb-3">{value.title}</h3>
+              <audience.icon className="w-6 h-6 text-[#0A1628]/30 mb-6" strokeWidth={1.5} />
+              <h3 className="text-xl font-medium mb-3">{audience.title}</h3>
               <p className="text-[#0A1628]/60 font-light leading-relaxed">
-                {value.description}
+                {audience.description}
               </p>
             </motion.div>
           ))}

@@ -8,35 +8,42 @@ const Services = () => {
 
   const services = [
     {
-      title: "Leadership Communication",
+      title: "Institutional Positioning & Strategic Communications",
       items: [
-        "Executive positioning and messaging guidance",
-        "Speech and statement development",
-        "Leadership public communication strategy",
+        "Executive visibility and thought leadership positioning",
+        "Institutional messaging architecture",
+        "Stakeholder communication strategy",
+        "Strategic media engagement frameworks",
+        "Narrative alignment during organisational transitions",
       ],
     },
     {
-      title: "Institutional Narrative Development",
+      title: "Government & Policy Engagement Strategy",
       items: [
-        "Clarifying organisational purpose and public role",
-        "Developing communication frameworks and message architecture",
-        "Helping organisations explain decisions and priorities clearly",
+        "Government stakeholder mapping",
+        "Policy intelligence briefings",
+        "Engagement sequencing strategy",
+        "Partnership positioning for public sector programmes",
+        "Advisory on navigating regulatory perception risk",
       ],
     },
     {
-      title: "Stakeholder Engagement Strategy",
+      title: "Perception Risk & Reputation Architecture",
       items: [
-        "Stakeholder mapping and relationship planning",
-        "Community and partner communication guidance",
-        "Managing expectations during organisational change",
+        "Reputation risk diagnostics",
+        "Crisis anticipation frameworks",
+        "Stakeholder sentiment analysis",
+        "Strategic response advisory",
+        "Leadership communication calibration",
       ],
     },
     {
-      title: "Reputation & Crisis Advisory",
+      title: "Development Finance & Strategic Partnerships",
       items: [
-        "Identifying communication risks before they escalate",
-        "Crisis preparedness and response planning",
-        "Real-time advisory during sensitive situations",
+        "Alignment advisory for multilateral funding windows",
+        "Institutional positioning for blended finance opportunities",
+        "Strategic partnership architecture",
+        "Programme visibility and credibility strategy",
       ],
     },
   ];
@@ -51,7 +58,7 @@ const Services = () => {
         >
           <motion.div variants={fadeUp} className="mb-4">
             <span className="text-xs font-bold tracking-widest uppercase text-[#0A1628]/40">
-              What We Do
+              Core Advisory Pillars
             </span>
           </motion.div>
 
@@ -60,15 +67,15 @@ const Services = () => {
               variants={fadeUp}
               className="text-3xl md:text-5xl font-serif leading-tight"
             >
-              Structured advisory support for leadership and institutions.
+              Structured advisory for institutions navigating complexity.
             </motion.h2>
             <motion.p
               variants={fadeUp}
               className="text-lg text-[#0A1628]/70 font-light leading-relaxed self-end"
             >
-              We help institutions make better decisions in public and
-              communicate them responsibly. Our services cover the full spectrum
-              of institutional communication needs.
+              Our services support leaders and institutions operating in complex
+              influence environments where credibility, policy alignment and
+              stakeholder perception directly impact outcomes.
             </motion.p>
           </div>
         </motion.div>
@@ -86,7 +93,7 @@ const Services = () => {
               className="border-b border-[#0A1628]/10"
             >
               <button
-                className="w-full py-8 flex justify-between items-center text-left focus:outline-none group"
+                className="w-full py-8 flex justify-between items-center text-left focus:outline-none focus:ring-2 focus:ring-[#0A1628]/20 cursor-pointer group"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
                 <div className="flex items-center gap-6">

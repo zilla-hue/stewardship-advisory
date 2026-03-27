@@ -5,8 +5,8 @@ const ValuesPage = () => {
   return (
     <>
       <PageSEO
-        title="Values"
-        description="The core values that guide Stewardship Advisory: integrity, independence, discretion, and commitment to institutional legitimacy."
+        title="Who We Work With"
+        description="Stewardship Advisory Co partners with government institutions, financial services, corporate organisations, multilateral programmes, and senior executives navigating complex influence environments."
         path="/values"
       />
       <Values />

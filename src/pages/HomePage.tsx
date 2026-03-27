@@ -11,8 +11,8 @@ const HomePage = () => {
   return (
     <>
       <PageSEO
-        title="Stewardship Advisory | Institutional Communications & Reputation Advisory"
-        description="Stewardship Advisory is an institutional communications and reputation advisory practice supporting leaders and organisations whose responsibilities place them in the public eye."
+        title="Stewardship Advisory Co | Stewarding Influence. Shaping Institutional Trust."
+        description="We advise leaders, institutions and high-impact organisations navigating complex policy environments, reputational risk landscapes and transformational growth opportunities."
         path="/"
         isHome={true}
       />

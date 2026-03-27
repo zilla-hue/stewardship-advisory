@@ -7,11 +7,11 @@ import { fadeUp, staggerContainer } from "../lib/animations";
 import PageSEO from "../lib/seo";
 
 const INQUIRY_TOPICS = [
-  "Institutional Communications Strategy",
-  "Reputation Advisory",
-  "Stakeholder Engagement",
-  "Crisis Communications",
-  "I-TRUST Framework",
+  "Institutional Positioning & Strategic Communications",
+  "Government & Policy Engagement",
+  "Reputation Risk & Perception Management",
+  "Development Finance & Strategic Partnerships",
+  "Executive Strategic Counsel",
   "General Inquiry",
 ];
 
@@ -43,7 +43,7 @@ const ContactPage = () => {
   const seo = (
     <PageSEO
       title="Contact"
-      description="Get in touch with Stewardship Advisory. We welcome inquiries from institutions and leaders seeking independent strategic counsel."
+      description="Get in touch with Stewardship Advisory Co. We welcome inquiries from institutions and leaders seeking independent strategic counsel."
       path="/contact"
     />
   );
@@ -116,7 +116,7 @@ const ContactPage = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full border border-[#0A1628]/20 rounded px-4 py-3 text-[#0A1628] bg-white focus:outline-none focus:border-[#0A1628]"
+              className="w-full border border-[#0A1628]/20 rounded px-4 py-3 text-[#0A1628] bg-white focus:outline-none focus:ring-2 focus:ring-[#0A1628]/20 focus:border-[#0A1628]"
             />
             {clientErrors.name && (
               <p className="text-red-500 text-sm mt-1">{clientErrors.name}</p>
@@ -134,7 +134,7 @@ const ContactPage = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full border border-[#0A1628]/20 rounded px-4 py-3 text-[#0A1628] bg-white focus:outline-none focus:border-[#0A1628]"
+              className="w-full border border-[#0A1628]/20 rounded px-4 py-3 text-[#0A1628] bg-white focus:outline-none focus:ring-2 focus:ring-[#0A1628]/20 focus:border-[#0A1628]"
             />
             {clientErrors.email && (
               <p className="text-red-500 text-sm mt-1">{clientErrors.email}</p>
@@ -160,7 +160,7 @@ const ContactPage = () => {
               type="text"
               value={organization}
               onChange={(e) => setOrganization(e.target.value)}
-              className="w-full border border-[#0A1628]/20 rounded px-4 py-3 text-[#0A1628] bg-white focus:outline-none focus:border-[#0A1628]"
+              className="w-full border border-[#0A1628]/20 rounded px-4 py-3 text-[#0A1628] bg-white focus:outline-none focus:ring-2 focus:ring-[#0A1628]/20 focus:border-[#0A1628]"
             />
           </div>
 
@@ -174,7 +174,7 @@ const ContactPage = () => {
               name="topic"
               value={topic}
               onChange={(e) => setTopic(e.target.value)}
-              className="w-full border border-[#0A1628]/20 rounded px-4 py-3 text-[#0A1628] bg-white focus:outline-none focus:border-[#0A1628]"
+              className="w-full border border-[#0A1628]/20 rounded px-4 py-3 text-[#0A1628] bg-white focus:outline-none focus:ring-2 focus:ring-[#0A1628]/20 focus:border-[#0A1628]"
             >
               <option value="">Select a topic</option>
               {INQUIRY_TOPICS.map((t) => (
@@ -196,7 +196,7 @@ const ContactPage = () => {
               rows={5}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full border border-[#0A1628]/20 rounded px-4 py-3 text-[#0A1628] bg-white focus:outline-none focus:border-[#0A1628] resize-none"
+              className="w-full border border-[#0A1628]/20 rounded px-4 py-3 text-[#0A1628] bg-white focus:outline-none focus:ring-2 focus:ring-[#0A1628]/20 focus:border-[#0A1628] resize-none"
             />
             {clientErrors.message && (
               <p className="text-red-500 text-sm mt-1">
@@ -215,7 +215,7 @@ const ContactPage = () => {
           <button
             type="submit"
             disabled={state.submitting}
-            className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-[#0A1628] text-white font-medium hover:bg-[#0A1628]/90 transition-colors disabled:opacity-60"
+            className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-[#0A1628] text-white font-medium hover:bg-[#0A1628]/90 transition-colors disabled:opacity-60 cursor-pointer disabled:cursor-not-allowed"
           >
             {state.submitting ? (
               <>

@@ -69,22 +69,22 @@ const Framework = () => {
         >
           <motion.div variants={fadeUp} className="mb-4">
             <span className="text-xs font-bold tracking-widest uppercase text-white/40">
-              Our Advisory Framework
+              Intellectual Framework
             </span>
           </motion.div>
           <motion.h2
             variants={fadeUp}
             className="text-4xl md:text-5xl font-serif mb-6"
           >
-            The I-TRUST Model
+            The I-TRUST Institutional Stewardship Model
           </motion.h2>
           <motion.p
             variants={fadeUp}
             className="text-lg text-white/50 font-light max-w-2xl mx-auto"
           >
-            Institutional Trust &amp; Reputation Structuring Toolkit — a structured
-            method designed to strengthen institutional credibility and
-            stakeholder confidence.
+            Our advisory methodology is anchored on a proprietary strategic lens
+            that evaluates leadership effectiveness across critical dimensions of
+            influence, trust capital and stakeholder alignment.
           </motion.p>
         </motion.div>
 
