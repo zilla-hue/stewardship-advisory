@@ -46,8 +46,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.div
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          animate="visible"
           variants={staggerContainer}
         >
           <motion.div variants={fadeUp} className="mb-4">
@@ -76,8 +75,7 @@ const Services = () => {
 
         <motion.div
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          animate="visible"
           variants={staggerContainer}
           className="border-t border-[#0A1628]/10"
         >

@@ -47,8 +47,7 @@ const Values = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.div
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          animate="visible"
           variants={staggerContainer}
           className="text-center mb-20"
         >
@@ -68,8 +67,7 @@ const Values = () => {
 
         <motion.div
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          animate="visible"
           variants={staggerContainer}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16"
         >

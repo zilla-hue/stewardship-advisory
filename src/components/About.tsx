@@ -6,8 +6,7 @@ const About = () => {
     <section id="about" className="bg-white text-[#0A1628] py-24 md:py-32">
       <motion.div
         initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        animate="visible"
         variants={staggerContainer}
         className="max-w-7xl mx-auto px-6 md:px-12"
       >
